@@ -1,6 +1,7 @@
 var express = require('express');
 var app = express();
 
+
 const { Sequelize, DataTypes } = require('sequelize');
 const sequelize = new Sequelize({
   dialect: 'sqlite',
@@ -73,12 +74,15 @@ app.get('/admin', async function(req, res) {
 
 app.get('/robots.txt', async function(req, res) {
   
-  res.render("robots.txt");
+ 
+
+  res.sendFile( __dirname + '/robots.txt')
 })
 
 app.get('/sitemap.xml', async function(req, res) {
   
-  res.render("sitemap.xml");
+  
+  res.sendFile( __dirname + '/sitemap.xml')
 })
 
 app.listen(8080);
