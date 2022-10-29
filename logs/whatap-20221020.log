@@ -1,0 +1,12 @@
+20221020 20:07:31 [WHATAP-001] <18084> Start initialize WhaTap Agent...
+20221020 20:07:32 [WHATAP-203] <18084> Config file reloaded
+20221020 20:07:32 [WHATAP-101] <18084> Finish initialize configuration... false
+20221020 20:07:32 [WHATAP-110] <18084> [pcode=25816,SECURE_KEY=ef995bad85139fabdf496eff7ccd8e86]
+20221020 20:07:32 [WHATAP-170] <18084> [WhaTap Agent] now waiting for starting......
+20221020 20:07:37 [WHATAP-011] <18084> Connecton Retry....
+20221020 20:07:37 [WHATAP-180] <18084> Try to connect to {"host":"13.124.11.223","port":6600}
+20221020 20:07:37 [WHATAP-968] <18084> OID: -1680841273 ONAME: NODE-13-116 IP: 119.207.13.116
+20221020 20:07:37 [[cloudPlatformCheck]] <18084> cloud_platform: kic , cloud_platform_chk: kr-central-1 , cloud_platform_httpc: http://169.254.169.254/latest/meta-data/placement/availability-zone
+20221020 20:07:37 [[cloudPlatformCheck Error]] <18084> Error: connect ENETUNREACH 169.254.169.254:80
+20221021 03:43:50 [WHATAP-184] <18084> Socket timeout. WhaTap will retry connect after 10 sec.
+20221021 03:43:50 [WHATAP-180] <18084> Try to connect to {"host":"13.209.172.35","port":6600}
