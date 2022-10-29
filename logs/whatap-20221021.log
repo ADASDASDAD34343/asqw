@@ -1,0 +1,8 @@
+20221021 03:43:50 [[cloudPlatformCheck]] <18084> cloud_platform: kic , cloud_platform_chk: kr-central-1 , cloud_platform_httpc: http://169.254.169.254/latest/meta-data/placement/availability-zone
+20221021 03:43:50 [[cloudPlatformCheck Error]] <18084> Error: connect ENETUNREACH 169.254.169.254:80
+20221021 05:53:05 [WHATAP-184] <18084> Socket timeout. WhaTap will retry connect after 10 sec.
+20221021 05:53:05 [WHATAP-180] <18084> Try to connect to {"host":"13.124.11.223","port":6600}
+20221021 05:53:05 [[cloudPlatformCheck]] <18084> cloud_platform: kic , cloud_platform_chk: kr-central-1 , cloud_platform_httpc: http://169.254.169.254/latest/meta-data/placement/availability-zone
+20221021 05:53:05 [[cloudPlatformCheck Error]] <18084> Error: connect ENETUNREACH 169.254.169.254:80
+20221022 05:07:05 [WHATAP-184] <18084> Socket timeout. WhaTap will retry connect after 10 sec.
+20221022 05:07:05 [WHATAP-180] <18084> Try to connect to {"host":"13.209.172.35","port":6600}
