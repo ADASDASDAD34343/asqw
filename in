@@ -1,5 +1,0 @@
-views
-app.get('/create',  function(req, res) {
-  console.log(req.query)
- res.send('1')
-});
