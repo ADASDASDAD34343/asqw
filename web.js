@@ -96,6 +96,17 @@ app.get('/', async function(req, res) {
   
   res.sendFile( __dirname + '/html/index.html')
 })
+app.get('/쇼핑', async function(req, res) {
+
+  
+  res.sendFile( __dirname + '/html/t.html')
+})
+app.get('/Shopping', async function(req, res) {
+
+  
+  res.sendFile( __dirname + '/html/t.html')
+})
+
 
 app.listen(8080);
 console.log('Server is listening on port 8080');
