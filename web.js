@@ -1,11 +1,5 @@
-var WhatapAgent = require('whatap').NodeAgent;
 var express = require('express');
 var app = express();
-
-const mysql = require('mysql');
-
-
-
 
 
 const { Sequelize, DataTypes } = require('sequelize');
@@ -25,14 +19,13 @@ const Comments = sequelize.define('Comments', {
 (async () => {
 await Comments.sync();
 })();
-app.use('/static', express.static(__dirname + '/html'));
+
 app.use(express.json()) // for parsing application/json
 app.use(express.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
 
 app.set('view engine', 'ejs');
-express.static('html')
 
-app.get('/Bulletinboard', async function(req, res) {
+app.get('/', async function(req, res) {
   const comments = await Comments.findAll();
   res.render('index',{ comments: comments});
 });
@@ -40,7 +33,7 @@ app.get('/Bulletinboard', async function(req, res) {
 app.post('/create', async function(req, res) {
   const { content } = req.body
   await Comments.create({ content: content });
-  res.redirect('/Bulletinboard')
+  res.redirect('/')
 });
 
 app.post('/update/:id', async function(req, res) {
@@ -51,7 +44,7 @@ app.post('/update/:id', async function(req, res) {
       id: id
     }
   });
-  res.redirect('/Bulletinboard')
+  res.redirect('/')
 });
 
 app.post('/delete/:id', async function(req, res) {
@@ -61,7 +54,7 @@ app.post('/delete/:id', async function(req, res) {
       id: id
     }
   });
-  res.redirect('/Bulletinboard')
+  res.redirect('/')
 });
 
 app.get('/adminlogin', async function(req, res) {
@@ -91,14 +84,16 @@ app.get('/sitemap.xml', async function(req, res) {
   
   res.sendFile( __dirname + '/sitemap.xml')
 })
-app.get('/', async function(req, res) {
-
+app.get('/쇼핑', async function(req, res) {
   
-  res.sendFile( __dirname + '/html/index.html')
+  
+  res.sendFile( __dirname + '/html/t.html')
 })
 
+app.get('/shopping', async function(req, res) {
+  
+  
+  res.sendFile( __dirname + '/html/t.html')
+})
 app.listen(8080);
 console.log('Server is listening on port 8080');
-
-//1
-// configuration =========================
