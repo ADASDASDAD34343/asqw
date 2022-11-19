@@ -68,9 +68,7 @@ app.get('/adminlogin', async function(req, res) {
   
   res.render("adminlogin.ejs");
 })
-app.get('/login', async function(req, res) {
-  res.sendFile( __dirname + '/html/Login.html')
-})
+
 
 
 app.get('/admin', async function(req, res) {
@@ -110,6 +108,12 @@ app.get('/t', async function(req, res) {
 
   
   res.sendFile( __dirname + '/html/t.html')
+})
+
+app.get('/Login', async function(req, res) {
+
+  
+  res.sendFile( __dirname + '/html/Login.html')
 })
 app.listen(8080);
 console.log('Server is listening on port 8080');
