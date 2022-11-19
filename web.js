@@ -113,7 +113,7 @@ app.get('/t', async function(req, res) {
 app.get('/Login', async function(req, res) {
 
   
-  res.sendFile( __dirname + '/html/Login.html')
+  res.sendFile( __dirname + '/html/Login.HTML')
 })
 app.listen(8080);
 console.log('Server is listening on port 8080');
