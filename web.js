@@ -69,8 +69,7 @@ app.get('/adminlogin', async function(req, res) {
   res.render("adminlogin.ejs");
 })
 app.get('/login', async function(req, res) {
-  
-  res.render("login.ejs");
+  res.sendFile( __dirname + '/html/Login.html')
 })
 
 
