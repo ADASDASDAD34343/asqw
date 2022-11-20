@@ -1,6 +1,6 @@
  // Import the functions you need from the SDKs you need
- import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-app.js";
- import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-analytics.js";
+ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-analytics.js";
  import {
    getAuth,
    signInWithPopup,
@@ -15,14 +15,14 @@
  // Your web app's Firebase configuration
  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
  const firebaseConfig = {
-   apiKey: "AIzaSyCH_qQKgvX04MCiInM0t-1el2gXoNc9YpI",
-   authDomain: "easylogin-69172.firebaseapp.com",
-   projectId: "easylogin-69172",
-   storageBucket: "easylogin-69172.appspot.com",
-   messagingSenderId: "507786873248",
-   appId: "1:507786873248:web:a4effc2440a8e81bfbfcc5",
-   measurementId: "G-X3G15GWG5T",
- };
+  apiKey: "AIzaSyD6vCDnAVnudRVaw3oYln04C1oZwfkxFvQ",
+  authDomain: "sdf-d7469.firebaseapp.com",
+  projectId: "sdf-d7469",
+  storageBucket: "sdf-d7469.appspot.com",
+  messagingSenderId: "1006449226899",
+  appId: "1:1006449226899:web:ddd01eb95764048bd38966",
+  measurementId: "G-XPG6JHN6F2"
+};
 
  // Initialize Firebase
  const app = initializeApp(firebaseConfig);
