@@ -7,7 +7,7 @@
    GoogleAuthProvider,
    signInWithPhoneNumber,
    RecaptchaVerifier,
- } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-auth.js";
+ } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-auth.js";
 
  // TODO: Add SDKs for Firebase products that you want to use
  // https://firebase.google.com/docs/web/setup#available-libraries
