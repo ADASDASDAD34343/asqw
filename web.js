@@ -115,6 +115,11 @@ app.get('/Login', async function(req, res) {
   
   res.sendFile( __dirname + '/html/Login.HTML')
 })
+app.get('/개인정보처리방침', async function(req, res) {
+
+  
+  res.sendFile( __dirname + '/html/r.HTML')
+})
 app.listen(8080);
 console.log('Server is listening on port 8080');
 
