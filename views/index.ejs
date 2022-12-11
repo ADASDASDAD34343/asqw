@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>게시판</title>
+    <title>출석체크 이벤트</title>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 <meta name="naver-site-verification" content="04162b972802ed37f29370958bb61e1f24eefec8" />
@@ -35,7 +35,7 @@
 </script>
 </head>
 <body>
-    <h1>게시판 목록</h1>
+    <h1>출석체크 이벤트</h1>
     <ul>
     <% for (comment of comments) { %>
         <li><%= comment.content %></li>
@@ -51,15 +51,9 @@
     <hr>
     <form action="/create" method="post">
         <input type="text" name="content"><br><br>
-        <input type="submit" value="Submit">
+        <input type="출석체크하기" value="출석체크하기">
     </form>
-    <a href="https://www.sdfsdgdfgdgd.shop/login" target="_blank" rel="noopener noreferrer">
-	login
-</a>
- <a href="https://www.sdfsdgdfgdgd.shop/login" target="_blank" rel="noopener noreferrer">
-	login
-	 <input type="login" value="login">
-</a>
- <input type="login" value="login">
+    
+
 </body>
 </html>
